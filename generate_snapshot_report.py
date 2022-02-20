@@ -39,11 +39,9 @@ def output(filename):
 
 
 vcenter = input("Enter vCenter IP or FQDN: ")
-vcenter = vcenter or "192.168.88.67"
 user = input("Enter vCenter user name [default administrator@vsphere.local]: ")
 user = user or "administrator@vsphere.local"
 password = getpass.getpass(f"Enter password for {user} on {vcenter}: ")
-password = password or "VMware1!"
 port = 443
 
 start_time = time.time()
